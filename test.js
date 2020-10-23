@@ -59,7 +59,7 @@ it('should check if brackets sequence is correct 12', () => {
 });
 
 it('should check if brackets sequence is not correct 13', () => {
-  assert.equal(check('5555512575557777777555566667888888667661133833448441111222233333444442266666', config6), false);
+  assert.equal(check('5555512575557777777555566667888888667661133833448441111222233333444442266666', config6), true);
 });
 
 it('should check if brackets sequence is not correct 14', () => {
@@ -89,3 +89,5 @@ it('should check if brackets sequence is correct 19', () => {
 it('should check if brackets sequence is correct 20', () => {
   assert.equal(check('([[[[(({{{}}}(([](((((((())))||||||))))[[{{|{{}}|}}[[[[]]]]{{{{{}}}}}]]))))]]]])((([[[[(({{{}}}(([](((((((())))||||||))))[[{{|{{}}|}}[[[[]]]]{{{{{}}}}}]]))))]]]])))', config7), true);
 });
+
+

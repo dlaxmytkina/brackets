@@ -27,23 +27,21 @@ module.exports = function check(str, bracketsConfig) {
         }
     }else{ 
         while(k===1){
-            if (str.match(/1/) && str.match(/2/)){
-                str=str.replace(/1/, '');
-                str=str.replace(/2/, '');
+            if (str.match(/12/)){
+                str=str.replace(/12/, '');
             } 
-            else if( str.match(/3/) && str.match(/4/) ){
-                str=str.replace(/3/, '');
-                str=str.replace(/4/, '');
+            else if( str.match(/34/)  ){
+                str=str.replace(/34/, '');
             } 
-            else if( str.match(/5/) && str.match(/6/) ){
-                str=str.replace(/5/, '');
-                str=str.replace(/6/, '');
+            else if( str.match(/56/) ){
+                str=str.replace(/56/, '');
+               
             } 
-            else if( str.match(/7{2}/)){
-                str=str.replace(/7{2}/, '');
+            else if( str.match(/77/)){
+                str=str.replace(/77/, '');
             } 
-            else if( str.match(/8{2}/)) {
-                str=str.replace(/8{2}/, '')
+            else if( str.match(/88/)) {
+                str=str.replace(/88/, '')
             } else k++;
 
             
